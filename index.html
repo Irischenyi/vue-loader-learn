@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>my-project</title>
+  </head>
+  <link href="https://unpkg.com/animate.css@3.5.1/animate.min.css" rel="stylesheet" type="text/css">
+
+  <body>
+    <div id="app">
+        <h1>hello app</h1>
+        <p>
+            <router-link to="/foo">go to Foo</router-link>
+            <router-link to="/bar">go to Bar</router-link>
+            <router-link to="/user">go to user</router-link>
+            <!-- <router-link to="/loader">go to loader</router-link> -->
+            
+        </p>
+        <loader></loader>
+        <div v-on:click="change">clickto</div>
+        <!-- <router-view></router-view> -->
+    </div>
+    <script src="https://unpkg.com/axios@0.12.0/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/lodash@4.13.1/lodash.min.js"></script>
+    <script src="/dist/build.js"></script>
+  </body>
+</html>
